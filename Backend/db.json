@@ -1,0 +1,50 @@
+{
+  "Players": [
+    {
+      "id": 1,
+      "firstName": "Sergio",
+      "lastName": "Ramos",
+      "email": "ramos@gmail.com",
+      "number": "4"
+    },
+    {
+      "firstName": "Karim",
+      "lastName": "Benzema",
+      "email": "karimbenzema@gmail.com",
+      "number": "9",
+      "id": 2
+    },
+    {
+      "firstName": "Tony ",
+      "lastName": "Kroos",
+      "email": "tonykroos@gmail.com",
+      "number": "8",
+      "id": 3
+    },
+    {
+      "firstName": "Eden ",
+      "lastName": "Hazard",
+      "email": "eden10@gmail.com",
+      "number": "7",
+      "id": 4
+    }
+  ],
+  "Users": [
+    {
+      "id": 1,
+      "first_name": "Admin",
+      "last_name": "Admin",
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "isAdmin": "true"
+    },
+    {
+      "id": 2,
+      "first_name": "Diyas",
+      "last_name": "Tursunkali",
+      "email": "dias.tursunkali@gmail.com",
+      "password": "12345678",
+      "isAdmin": "false"
+    }
+  ]
+}
