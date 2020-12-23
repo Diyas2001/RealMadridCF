@@ -118,6 +118,8 @@
     <ul class="list-unstyled list-inline font-small mt-3">
       <li class="list-inline-item pr-2 white-text">
         <mdb-icon far icon="clock" class="pr-1"></mdb-icon>13/12/2020</li>
+      <br> <br>
+      <p>Current date: {{today | date: 'short' }}</p>
     </ul>
   </mdb-card-footer>
   <!-- Card footer -->
@@ -156,7 +158,8 @@
       <ul class="list-unstyled list-inline font-small mt-3">
         <li class="list-inline-item pr-2 white-text">
           <mdb-icon far icon="clock" class="pr-1"></mdb-icon>16/12/2020</li>
-
+        <br> <br>
+        <p>Current date: {{today | date: 'short' }}</p>
       </ul>
     </mdb-card-footer>
     <!-- Card footer -->
@@ -196,6 +199,8 @@
       <ul class="list-unstyled list-inline font-small mt-3">
         <li class="list-inline-item pr-2 white-text">
           <mdb-icon far icon="clock" class="pr-1"></mdb-icon>21/12/2020</li>
+        <br> <br>
+          <p>Current date: {{today | date: 'short' }}</p>
       </ul>
     </mdb-card-footer>
     <!-- Card footer -->
@@ -245,7 +250,9 @@
       <p class="font-weight-normal">The Santiago Bernabéu Stadium (Spanish: Estadio Santiago Bernabéu) is a football stadium in Madrid, Spain.
         With a current seating capacity of 81,044,  it has been the home stadium of Real Madrid since its completion in 1947.
         It is the second-largest stadium in Spain and largest in the Community of Madrid.</p>
-      <p class="font-weight-normal"><a><strong>Opened</strong></a>, 14 December 1947</p>
+      <p class="font-weight-normal"><a><strong>Opened</strong></a>, {{ Opened | date:format }}
+        <button (click)="toggleFormat()">Toggle Format</button></p>
+
 
       <a mdbBtn color="success" mdbWavesEffect href="https://en.wikipedia.org/wiki/Santiago_Bernab%C3%A9u_Stadium">Read more</a>
 

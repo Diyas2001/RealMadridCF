@@ -18,6 +18,9 @@
       <li class="nav-item">
         <a class="nav-link waves-light" mdbWavesEffect routerLink="/table">Table</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect routerLink="/online">Online</a>
+      </li>
 
     </ul>
     <!-- Links -->
@@ -26,7 +29,7 @@
       <li class="nav-item">
         <a class="nav-link">
           <div class="btn-group" mdbDropdown>
-            <mdb-icon fas icon="user" mdbDropdownToggle></mdb-icon>
+            <mdb-icon fas icon="user" classInside="dropdown-toggle" mdbDropdownToggle class="waves-effect"></mdb-icon>
             <div class="dropdown-menu dropdown-menu-right dropdown-primary">
               <a class="dropdown-item" href="#" routerLink="/login" *ngIf="!username || 0 === username.length">Login</a>
               <a class="dropdown-item" href="#" routerLink="/regist" *ngIf="!username || 0 === username.length">Sign Up</a>

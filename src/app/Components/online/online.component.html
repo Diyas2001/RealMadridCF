@@ -1,0 +1,7 @@
+<br>
+<h2 style="text-align: center">Online Translation (text)</h2>
+<app-online-text (newTextEvent)="addText($event)"></app-online-text>
+<ul class="list-group" style="margin: 50px auto; width: 50%; padding: 10px;">
+  <app-view-text *ngFor="let text of texts"
+            [text]="text"></app-view-text>
+</ul>

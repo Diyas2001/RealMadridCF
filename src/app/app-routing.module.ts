@@ -7,6 +7,7 @@ import {PlayersListComponent} from './Components/players/players-list/players-li
 import {PlayersEditComponent} from './Components/players/players-edit/players-edit.component';
 import {TableComponent} from './Components/table/table.component';
 import {AuthGuard} from './Guard/auth.guard';
+import {OnlineComponent} from './Components/online/online.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: 'listPl', component: PlayersListComponent},
   {path: 'editPl/:id', component: PlayersEditComponent},
   {path: 'table', component: TableComponent},
+  {path: 'online', component: OnlineComponent, canActivate: [AuthGuard]}
 ];
 
 @NgModule({

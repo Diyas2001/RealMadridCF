@@ -20,8 +20,10 @@ import {AuthModule} from './Module/auth.module';
 import {AuthenticationService} from './Module/auth.service';
 import {UserService} from './Module/user.service';
 import { TableComponent } from './Components/table/table.component';
+import { OnlineTextComponent } from './Components/online/online-text/online-text.component';
+import { OnlineComponent } from './Components/online/online.component';
+import { ViewTextComponent } from './Components/online/view-text/view-text.component';
 
-import { DatePipe } from './Pipes/date.pipe';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { DatePipe } from './Pipes/date.pipe';
     PlayersCreatComponent,
     PlayersEditComponent,
     TableComponent,
-    DatePipe,
+    OnlineTextComponent,
+    OnlineComponent,
+    ViewTextComponent,
   ],
   imports: [
     BrowserModule,
